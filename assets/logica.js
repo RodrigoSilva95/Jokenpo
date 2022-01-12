@@ -1,10 +1,13 @@
 // Codigo JS do jogo
-var jogadorNome
-var jogadorPontos = 0
-var jogadorEscolha = 0
+let jogadorNome = prompt("Qual é o seu nome?")
+let definirJogadorNome = (jogadorNome)
 
-var computadorEscolha = 0
-var computadorPontos = 0
+let mensagem = ('Bem-vindo ' + jogadorNome + ' está preparado? Escolha uma opção acima...')
+let jogadorPontos = 0
+let jogadorEscolha = 0
+
+let computadorEscolha = 0
+let computadorPontos = 0
 
 /* 
     Gera os números randomicos
@@ -134,7 +137,3 @@ document.getElementById('jogador-escolha-1').onclick = function(){ jogar(1); };
 document.getElementById('jogador-escolha-2').onclick = function(){ jogar(2); };
 document.getElementById('jogador-escolha-3').onclick = function(){ jogar(3); };
 
-jogadorNome = prompt("Qual é o seu nome?");
-definirJogadorNome(jogadorNome);
-
-mensagem('Bem-vindo ' + jogadorNome + ' está preparado? Escolha uma opção acima...');
